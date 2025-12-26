@@ -5,7 +5,7 @@ import { MoviesList } from './components/MoviesList';
 import moviesFromServer from './api/movies.json';
 
 function getPreparedMovies(movies, { query }) {
-  let preparedMovies = [...movies];
+  let preparedMovies = movies;
 
   if (query) {
     const normalizedQuery = query.trim().toLowerCase();
